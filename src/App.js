@@ -41,6 +41,8 @@ class App extends Component {
     return this.state.beys.filter(bey => bey.favorite)
   }
 
+// This just only displays non-favoited beys instead of entire index 
+// could just render this.state.beys instead of this.filteredListB()
   filteredListB = () => {
     return this.state.beys.filter(bey => !bey.favorite)
   }
