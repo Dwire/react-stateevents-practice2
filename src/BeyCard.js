@@ -1,10 +1,10 @@
 import React from "react";
 
-const BeyCard = () => {
+const BeyCard = ({bey, handleFavClick}) => {
   return (
     <div>
-      <h3>{/*Bey name goes here*/}</h3>
-      {/*image tag goes here*/}
+      <h3>{bey.name}</h3>
+      <img onClick={() => handleFavClick(bey)} src={bey.img} alt="bey"/>
     </div>
   );
 };
