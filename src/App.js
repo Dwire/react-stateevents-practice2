@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
-
 import BeyContainer from './BeyContainer';
 import Favorites from './Favorites';
-
 import beyAdapter from './adapters/beyAdapter'
 
 class App extends Component {
-
   state = {
     beys: []
   }
@@ -36,12 +33,17 @@ class App extends Component {
     })
     this.setState({beys})
   }
+// NOTE: this is same function as above
+  // updateLocalBeyArray = (beyObj) => {
+  //   const beys = this.state.beys.map(bey => beyObj.id === bey.id ? {...bey, favorite: !bey.favorite} : bey)
+  //   this.setState({beys})
+  // }
 
   filteredList = () => {
     return this.state.beys.filter(bey => bey.favorite)
   }
 
-// This just only displays non-favoited beys instead of entire index 
+// This just only displays non-favoited beys instead of entire index
 // could just render this.state.beys instead of this.filteredListB()
   filteredListB = () => {
     return this.state.beys.filter(bey => !bey.favorite)

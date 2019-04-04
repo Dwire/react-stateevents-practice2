@@ -10,7 +10,7 @@
       "id": 2,
       "name": "I Slay When I Say I Slay",
       "img": "https://media.giphy.com/media/10tk2nVzRbNV5u/giphy.gif",
-      "favorite": true
+      "favorite": false
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "id": 4,
       "name": "Hallway Slay",
       "img": "https://media1.tenor.com/images/07fcc7f498655079905813acbaa4113a/tenor.gif?itemid=5036498",
-      "favorite": false
+      "favorite": true
     },
     {
       "id": 5,
